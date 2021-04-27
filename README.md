@@ -21,4 +21,5 @@ extern mh8_Drivetrain <Drivetrain Name>;
 
 # Using mach8
 To begin using mach8 type your drivetrain's name and access any of the functions by typing ".<Function Name>" after it.
-  Example: ```m_driveTrain.mh8_arcadeDrive(master.get_analog(ANALOG_LEFT_X), master.get_analog(ANALOG_LEFT_Y));```
+
+Example: ```m_driveTrain.mh8_arcadeDrive(master.get_analog(ANALOG_LEFT_X), master.get_analog(ANALOG_LEFT_Y));```
