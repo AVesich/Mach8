@@ -1,3 +1,3 @@
 # Mach8 Docs
 
-## Straight Drive Functions
+### Straight Drive Functions
