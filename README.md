@@ -23,3 +23,11 @@ extern mh8_Drivetrain <Drivetrain Name>;
 To begin using mach8 type your drivetrain's name and access any of the functions by typing ".<Function Name>" after it.
 
 Example: ```m_driveTrain.mh8_arcadeDrive(master.get_analog(ANALOG_LEFT_X), master.get_analog(ANALOG_LEFT_Y));```
+
+# Tuning PID
+You will most likely need to tune the various PID constants withing mach8's "Config.h" file, since every gear ratio will change the rotation of a robot's wheel.
+- I personally recommend running one autonomous function at a time (mh8_driveStraight, mh8_turn, etc.) and tuning the distance constants until you see a consistent drive distance (90 degree input makes the robot turn 90 degrees, 24 inch input makes it drive 24 inches, etc.)
+- The "ALIGN" variable should be tweaked until driving straight does not visibly oscillate
+- The P variable should be increased/decreased for each drive mode until acceleration is quick and smooth, but not to an extent that the robot wheelies when it comes to a stop.
+- I recommend not tuning the I variable
+- The D variable should be decreased until the robot comes to a desireably smooth stop and does not oscillate or jump forwards/backwards after reaching its target.
