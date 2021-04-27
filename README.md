@@ -3,6 +3,8 @@ An object-oriented drive function library to make Vex c++ programming in PROS fa
 
 # Notes:
 - The core functions are sourced from retired Vex team 491A.
+- Distance sensor logic and acceleration/deceleration was developed for mach8 by 1233A.
+- PID straight alignment was developed by 1233F.
 - These functions were further adapted to the object oriented format by 1233A during their 2020-2021 season.
 
 # How to use:
