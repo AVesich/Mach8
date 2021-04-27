@@ -19,4 +19,4 @@
    void mh8_driveRight(int spd);
    int mh8_getAvgDriveSideDeg(char side);
    void mh8_resetDrive();
-   void mh8_setBrake(char mode);``
+   void mh8_setBrake(char mode);```
