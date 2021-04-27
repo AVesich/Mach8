@@ -30,4 +30,4 @@ You will most likely need to tune the various PID constants withing mach8's "Con
 - The "ALIGN" variable should be tweaked until driving straight does not visibly oscillate
 - The P variable should be increased/decreased for each drive mode until acceleration is quick and smooth, but not to an extent that the robot wheelies when it comes to a stop.
 - I recommend not tuning the I variable
-- The D variable should be decreased until the robot comes to a desireably smooth stop and does not oscillate or jump forwards/backwards after reaching its target.
+- The D variable should be increased/decreased until the robot comes to a desireably smooth stop and does not oscillate or jump forwards/backwards after reaching its target.
