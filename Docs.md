@@ -1,3 +1,9 @@
 # Mach8 Docs
 
-### Straight Drive Functions
+## Manual Control
+### Driver Control Functions
+
+## Autonomous Control
+### Straight Autonomous Functions
+
+### Turning Autonomous Functions
