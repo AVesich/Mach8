@@ -2,7 +2,7 @@
 
 ## Manual Control
 ### Driver Control Functions
-mh8_tankDrive - tank drive (left & right joystick) control for your robot's drivetrain
+##### mh8_tankDrive - tank drive (left & right joystick) control for your robot's drivetrain
 ```c++
 void mh8_tankDrive(int lStick, int rStick);
 ```
@@ -16,8 +16,7 @@ void opcontrol() {
    }
 }
 ```
-
-mh8_arcadeDrive - arcade drive (x&y control with one joystick) for your robot's drivetrain
+##### mh8_arcadeDrive - arcade drive (x&y control with one joystick) for your robot's drivetrain
 ```c++
 void mh8_arcadeDrive(int xInput, int yInput);
 ```
