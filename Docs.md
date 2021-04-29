@@ -16,7 +16,7 @@ void opcontrol() {
    }
 }
 ```
-\
+ \
 mh8_arcadeDrive: arcade drive (x&y control with one joystick) for your robot's drivetrain
 ```c++
 void mh8_arcadeDrive(int xInput, int yInput);
@@ -31,7 +31,7 @@ void opcontrol() {
    }
 }
 ```
-\
+ \
 
 ## Autonomous Control
 ### Straight Autonomous Functions
@@ -45,7 +45,7 @@ void auto1() {
    mh8_Drivetrain.mh8_driveToTower(95, 150, 45); // Max rpm will be 95, The robot will accelerate over 150 ms, The robot will stop moving 45mm from an object
 }
 ```
-\
+ \
 mh8_DriveStraight: degree based straight driving that accelerates/decelerates using PID
 ```c++
 void mh8_DriveStraight(double inches, char dir);
@@ -56,7 +56,7 @@ void auto1() {
    mh8_Drivetrain.mh8_DriveStraight(24, 'f'); // The robot will drive forward 24 inches in the forward direction
 }
 ```
-\
+ \
 
 ### Turning Autonomous Functions
 mh8_Turn: degree based turning that accelerates/decelerates using PID
@@ -69,7 +69,7 @@ void auto1() {
    mh8_Drivetrain.mh8_Turn(90, 80, 'r'); // The robot will turn 90 degrees to the right with a maximum speed of 80
 }
 ```
-\
+ \
 mh8_Turn: degree based arc movements that accelerate/decelerate using PID
 ```c++
 void mh8_Arc(double deg, char dir, char fwd);
@@ -79,7 +79,7 @@ Example:
 void auto1() {
    mh8_Drivetrain.mh8_Arc(90, 'r', 'f'); // The robot will follow a right arc path for 90 degrees in the forward direction
 ```
-\
+ \
 ## Utility Functions
 ```c++
 void mh8_driveLeft(int spd);
