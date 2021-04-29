@@ -20,12 +20,18 @@ using namespace mh8_Sensors;
 
 extern mh8_Drivetrain <Drivetrain Name>;
 ```
-- Lastly, declare your drivetrain in a c++ file of your choice like this: ```c++ mh8_Drivetrain <Drivetrain Name>;```
+- Lastly, declare your drivetrain in a c++ file of your choice like this:
+```c++
+mh8_Drivetrain <Drivetrain Name>;
+```
 
 # Using mach8
 To begin using mach8 type your drivetrain's name and access any of the functions by typing ".<Function Name>" after it.
 
-Example: ```c++ m_driveTrain.mh8_arcadeDrive(master.get_analog(ANALOG_LEFT_X), master.get_analog(ANALOG_LEFT_Y));```
+Example:
+```c++
+m_driveTrain.mh8_arcadeDrive(master.get_analog(ANALOG_LEFT_X), master.get_analog(ANALOG_LEFT_Y));
+```
 
 # Tuning PID
 You will most likely need to tune the various PID constants withing mach8's "Config.h" file, since every gear ratio will change the rotation of a robot's wheel.
