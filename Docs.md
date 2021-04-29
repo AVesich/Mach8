@@ -30,6 +30,7 @@ void opcontrol() {
       delay(10);
    }
 }
+```
 
 ## Autonomous Control
 ### Straight Autonomous Functions
