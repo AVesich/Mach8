@@ -32,6 +32,7 @@ void opcontrol() {
 }
 ```
 \
+
 ## Autonomous Control
 ### Straight Autonomous Functions
 mh8_driveToTower: distance sensor based driving that accelerates over an adjustable period of time
@@ -56,6 +57,7 @@ void auto1() {
 }
 ```
 \
+
 ### Turning Autonomous Functions
 mh8_Turn: degree based turning that accelerates/decelerates using PID
 ```c++
