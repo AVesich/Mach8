@@ -16,7 +16,7 @@ void opcontrol() {
    }
 }
 ```
- \
+\
 mh8_arcadeDrive: arcade drive (x&y control with one joystick) for your robot's drivetrain
 ```c++
 void mh8_arcadeDrive(int xInput, int yInput);
@@ -31,7 +31,7 @@ void opcontrol() {
    }
 }
 ```
- \
+\
 ## Autonomous Control
 ### Straight Autonomous Functions
 mh8_driveToTower: distance sensor based driving that accelerates over an adjustable period of time
@@ -44,7 +44,7 @@ void auto1() {
    mh8_Drivetrain.mh8_driveToTower(95, 150, 45); // Max rpm will be 95, The robot will accelerate over 150 ms, The robot will stop moving 45mm from an object
 }
 ```
- \
+\
 ```c++
 void mh8_DriveStraight(double inches, char dir);
 ```
