@@ -2,7 +2,7 @@
 
 ## Manual Control
 ### Driver Control Functions
-mh8_tankDrive - tank drive (left & right joystick) control for your robot's drivetrain
+mh8_tankDrive: tank drive (left & right joystick) control for your robot's drivetrain
 ```c++
 void mh8_tankDrive(int lStick, int rStick);
 ```
@@ -17,7 +17,7 @@ void opcontrol() {
 }
 ```
  \
-mh8_arcadeDrive - arcade drive (x&y control with one joystick) for your robot's drivetrain
+mh8_arcadeDrive: arcade drive (x&y control with one joystick) for your robot's drivetrain
 ```c++
 void mh8_arcadeDrive(int xInput, int yInput);
 ```
@@ -31,11 +31,21 @@ void opcontrol() {
    }
 }
 ```
-
+ \
 ## Autonomous Control
 ### Straight Autonomous Functions
+mh8_driveToTower: distance sensor based driving that accelerates over an adjustable period of time
 ```c++
 void mh8_driveToTower(float maxPower, float curveTime, double sensitivity);
+```
+Example:
+```c++
+void auto1() {
+   mh8_Drivetrain.mh8_driveToTower(95, 150, 45); // Max rpm will be 95, The robot will accelerate over 150 ms, The robot will stop moving 45mm from an object
+}
+```
+ \
+```c++
 void mh8_DriveStraight(double inches, char dir);
 ```
 
